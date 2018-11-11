@@ -1,0 +1,7 @@
+[package]
+name = "pitemp"
+version = "0.1.0"
+authors = ["pi"]
+
+[dependencies]
+trivial_colours = "0.3"
