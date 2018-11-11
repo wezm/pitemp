@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+# Requires cross https://github.com/rust-embedded/cross
+# and arm-linux-gnueabihf-binutils Arch package installed
+
+cross build --target=armv7-unknown-linux-gnueabihf --release
+arm-linux-gnueabihf-strip target/armv7-unknown-linux-gnueabihf/release/pitemp
+tar zcvf pitemp-v0.X.0-arm-linux-gnueabihf.tar.gz -C target/armv7-unknown-linux-gnueabihf/release pitemp
