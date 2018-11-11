@@ -1,0 +1,9 @@
+task:
+  name: Test (Linux)
+  container:
+    image: wezm/steno-engine-ci:latest
+  cargo_cache:
+    folder: $CARGO_HOME/registry
+    fingerprint_script: cat Cargo.lock
+  test_script: cargo test
+  before_cache_script: rm -rf $CARGO_HOME/registry/index
