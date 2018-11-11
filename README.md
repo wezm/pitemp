@@ -11,7 +11,15 @@ Small tool to display CPU and GPU temperature on Raspberry Pi
 ### From Binary Release
 
 `pitemp` is a single small binary. Downloads are available from the
-[GitHub Releases][releases].
+[GitHub Releases][releases]. To download the latest release do the following:
+
+    curl -L https://github.com/wezm/pitemp/releases/download/v0.2.0/pitemp-v0.2.0-arm-linux-gnueabihf.tar.gz | tar zxf -
+
+The binary should be in your current directory and can my run as follows:
+
+    ./pitemp
+
+Feel free to move it elsewhere (`~/.local/bin` for example).
 
 ### From Source
 
