@@ -3,9 +3,13 @@
 
 extern crate trivial_colours;
 
+use std::alloc::System;
 use std::process::Command;
 use std::{fs, io};
 use trivial_colours::{Colour, Reset};
+
+#[global_allocator]
+static GLOBAL: System = System;
 
 fn main() -> Result<(), io::Error> {
     let cpu_temp = read_cpu_temp()?;
@@ -60,8 +64,7 @@ fn parse_vcgencmd_output(output: String) -> Result<f64, io::Error> {
     let parts: Vec<_> = output.splitn(2, '=').collect();
 
     match parts.as_slice() {
-        &["temp", temp] => temp
-            .chars()
+        &["temp", temp] => temp.chars()
             .filter(|c| c.is_digit(10) || *c == '.')
             .collect::<String>()
             .parse::<f64>()
