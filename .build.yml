@@ -1,0 +1,9 @@
+image: debian/stable
+packages:
+  - cargo
+sources:
+  - https://git.sr.ht/~wezm/pitemp
+tasks:
+  - test: |
+      cd pitemp
+      cargo test
