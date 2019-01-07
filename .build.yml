@@ -1,9 +1,10 @@
 image: debian/stable
 packages:
-  - cargo
+  - curl
 sources:
   - https://git.sr.ht/~wezm/pitemp
 tasks:
+  - install: curl https://sh.rustup.rs -sSf | sh -s -- -y
   - test: |
       cd pitemp
-      cargo test
+      PATH="$HOME/.cargo/bin:$PATH" cargo test
