@@ -3,6 +3,7 @@
 Small tool to display CPU and GPU temperature on Raspberry Pi
 
 [![builds.sr.ht status](https://builds.sr.ht/~wezm/pitemp.svg)](https://builds.sr.ht/~wezm/pitemp?)
+[Issue Tracker](https://todo.sr.ht/~wezm/pitemp)
 
 <img src="https://git.sr.ht/%7Ewezm/pitemp/blob/master/screenshot.png" alt="Screenshot of pitemp in a terminal window" width="466" />
 
