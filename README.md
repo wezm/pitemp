@@ -21,7 +21,7 @@ Small tool to display CPU and GPU temperature on Raspberry Pi
 
 `pitemp` is a single small binary. To download the latest release do the following:
 
-    curl -L https://github.com/wezm/pitemp/releases/download/v0.2.1/pitemp-v0.2.1-arm-linux-gnueabi.tar.gz | tar zxf -
+    curl -L https://releases.wezm.net/pitemp/pitemp-v0.3.0-arm-unknown-linux-gnueabihf.tar.gz | tar zxf -
 
 The binary should be in your current directory and can be run as follows:
 
@@ -43,5 +43,5 @@ Feel free to move it elsewhere (`~/.local/bin` for example).
 
 [rust]: https://www.rust-lang.org/en-US/install.html
 [nixcraft]: https://www.cyberciti.biz/faq/linux-find-out-raspberry-pi-gpu-and-arm-cpu-temperature-command/
-[release]: https://github.com/wezm/pitemp/releases/latest
+[release]: https://releases.wezm.net/pitemp/
 [license]: https://git.sr.ht/%7Ewezm/pitemp/tree/master/LICENSE
