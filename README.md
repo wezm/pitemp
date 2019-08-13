@@ -3,9 +3,8 @@
 Small tool to display CPU and GPU temperature on Raspberry Pi
 
 [![builds.sr.ht status](https://builds.sr.ht/~wezm/pitemp.svg)](https://builds.sr.ht/~wezm/pitemp?)
-[Issue Tracker](https://todo.sr.ht/~wezm/pitemp)
 
-<img src="https://git.sr.ht/%7Ewezm/pitemp/blob/master/screenshot.png" alt="Screenshot of pitemp in a terminal window" width="466" />
+<img src="https://github.com/wezm/pitemp/raw/master/screenshot.png" alt="Screenshot of pitemp in a terminal window" width="466" />
 
 ## Compatibility
 
@@ -34,7 +33,7 @@ Feel free to move it elsewhere (`~/.local/bin` for example).
 
 **Note:** You will need the [Rust compiler installed][rust].
 
-    git clone https://git.sr.ht/~wezm/pitemp
+    git clone https://github.com/wezm/pitemp.git
     cargo install --path pitemp
 
 ## License and Credits
@@ -45,4 +44,4 @@ Feel free to move it elsewhere (`~/.local/bin` for example).
 [rust]: https://www.rust-lang.org/en-US/install.html
 [nixcraft]: https://www.cyberciti.biz/faq/linux-find-out-raspberry-pi-gpu-and-arm-cpu-temperature-command/
 [release]: https://releases.wezm.net/pitemp/
-[license]: https://git.sr.ht/%7Ewezm/pitemp/tree/master/LICENSE
+[license]: https://github.com/wezm/pitemp/blob/master/LICENSE
