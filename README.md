@@ -11,6 +11,7 @@ Small tool to display CPU and GPU temperature on Raspberry Pi
 `pitemp` has been tested on these devices:
 
 * Raspberry Pi 3 B
+* Raspberry Pi 4
 * Raspberry Pi Zero W
 
 ## Installing
